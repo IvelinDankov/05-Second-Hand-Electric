@@ -1,113 +1,155 @@
-#catalog {
-  width: 100%;
-  height: 100vh;
-  background-image: url(../images/background-2.jpg);
-  background-position: center;
-  background-size: cover;
-  padding-top: 30px;
+@import url('https://fonts.google.com/specimen/Roboto+Condensed');
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url("../image/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-body::-webkit-scrollbar {
-    display: none;
+* {
+    font-family: Roboto, "Condensed", serif;
 }
 
-.game-market h1 {
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 10px;
+a {
+    text-decoration: none;
+    color: white;
 }
 
-.offer-list {
-  width: auto;
-  height: 580px;
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  overflow-x: auto;
+ul {
+    padding-inline-start: 0;
 }
 
-.game-market .game {
-  display: inline-block;
-  width: 500px;
-  height: 250px;
-  margin-top: 30px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  margin-right: 10px;
-  border: 2px solid #2e87cb;
-  border-radius: 30px;
-  background-color: #096BAB;
+input[type=submit]:hover, ul>li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
-.game-market .game-img img {
-  float: left;
-  border: 2px solid rgba(169, 152, 198, 0.781);
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  margin: 20px;
+li {
+    list-style-type: none;
+    display: inline-block;
+    border: 2px solid white;
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
 }
 
-.game-market .game-info {
-  margin-bottom: 20px;
+nav {
+    background: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 0;
 }
 
-.game-market .game-info h1 {
-  font-size: 18px;
-  margin-top: 30px;
-  color: white;
+nav > ul {
+    text-align: center;
+    margin: 0 5px;
+    color: white;
 }
 
-.game-market .game-info p {
-  color: #050912;
-  font-weight: bolder;
-  margin-top: 10px;
+img {
+    width: 35px;
+    height: 35px;
+    margin-top: 25px;
 }
 
-.game-market .game-info span {
-  color: white;
-  font-weight: bolder;
+h2 {
+    font-size: 50px;
+    margin: 0;
 }
 
-.game-market .game .btn-details {
-  border: 5em;
-  cursor: pointer;
-  outline: none;
-  font-size: 16px;
-  -webkit-transform: translate(0);
-  transform: translate(0);
-  background-image: linear-gradient(45deg, #732E4D, #AC6897);
-  padding: 0.7em 2em;
-  border-radius: 65px;
-  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
-  -webkit-transition: box-shadow 0.25s;
-  transition: box-shadow 0.25s;
-  color: white;
-  width: 100px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  text-decoration: none;
+label {
+    color: gray;
+    font-size: 25px;
 }
 
-.game-market .game .btn-details:hover {
-  box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+section {
+    text-align: center;
+    margin-top: 5px;
+    position: relative;
+    padding-bottom: 6px;
 }
 
-.no-offer {
-  border-top: 4px solid #2e87cb;
-  border-bottom: 4px solid #2e87cb;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.2);
-  background-color: #096BAB;
-  width: 50%;
-  height: 100px;
-  margin: auto;
-  margin-top: 5%;
+form {
+    text-align: center;
 }
 
-.no-offer p {
-  font-size: 30px;
-  text-align: center;
-  padding-top: 30px;
+input {
+    display: block;
+    margin: 10px auto;
+    width: 200px;
+    border: 2px solid lightsteelblue;
+    padding: 5px;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    background: black;
+    padding: 10px 0;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#viewCatalog{
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+
+.added-electronics-in-market {
+    color: white;
+    cursor: pointer;
+    width: 500px;
+    border: 2px solid white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.703);
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 300px;
+}
+
+.picture-added-electronics {
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.picture-added-electronics:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.added-electronics {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.guest {
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10%;
+    color: white;
+    background: rgba(0, 0, 0, 0.703);
+    padding: 40px;
+    width: 30%;
+    font-size: 30px;
+    border: 2px solid white;
 }
