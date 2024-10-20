@@ -7,4 +7,4 @@
 - [ ] Change Main Page, Index Page, Register Page, Login Page.
 - [ ] Watch out for title. 
 - [ ] Make path links. 
-- [ ] 
+- [ ] Next is to start with User data. 
