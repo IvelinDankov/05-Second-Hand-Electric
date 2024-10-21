@@ -7,14 +7,14 @@
   </head>
 
   <body>
-    <!-- In case of error, you should display div with class "errorContainer" -->
-    <!-- You can choose to display the first error or all of them (error message/s in your opinion) -->
 
-    <!-- <div>
+    {{#if error}}
+      <div>
         <div class="errorContainer">
-            <p>Error</p>
+          <p>{{error}}</p>
         </div>
-    </div> -->
+      </div>
+    {{/if}}
 
     <div id="container">
 
@@ -25,13 +25,13 @@
           <li><a href="/electro/catalog">Catalog</a></li>
           <!--For loggin users-->
           {{#if isAuthenticated}}
-          <li><a href="/electro/create">Create Offer</a></li>
-          <li><a href="/electro/search">Search</a></li>
-          <li><a href="/auth/logout">Logout</a></li>
+            <li><a href="/electro/create">Create Offer</a></li>
+            <li><a href="/electro/search">Search</a></li>
+            <li><a href="/auth/logout">Logout</a></li>
           {{else}}
-          <!--For guest user-->
-          <li><a href="/auth/login">Login</a></li>
-          <li><a href="/auth/register">Register</a></li>
+            <!--For guest user-->
+            <li><a href="/auth/login">Login</a></li>
+            <li><a href="/auth/register">Register</a></li>
           {{/if}}
         </ul>
 
