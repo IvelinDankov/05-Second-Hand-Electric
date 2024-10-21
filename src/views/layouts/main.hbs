@@ -2,40 +2,45 @@
 
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{title}}</title>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
   <body>
-    <header class="header">
+    <!-- In case of error, you should display div with class "errorContainer" -->
+    <!-- You can choose to display the first error or all of them (error message/s in your opinion) -->
+
+    <!-- <div>
+        <div class="errorContainer">
+            <p>Error</p>
+        </div>
+    </div> -->
+
+    <div id="container">
+
       <nav>
-        <img src="/images/logo.jpg" class="logo" />
         <ul>
+          <!--For all users-->
           <li><a href="/">Home</a></li>
-          <li><a href="#">All Games Code</a></li>
-          <li><a href="#">Search</a></li>
+          <li><a href="/electro/catalog">Catalog</a></li>
+          <!--For loggin users-->
           {{#if isAuthenticated}}
-          {{!-- user --}}
-          <li><a href="#">Create Game Offer</a></li>
+          <li><a href="/electro/create">Create Offer</a></li>
+          <li><a href="/electro/search">Search</a></li>
           <li><a href="/auth/logout">Logout</a></li>
           {{else}}
-          {{!-- guest --}}
+          <!--For guest user-->
           <li><a href="/auth/login">Login</a></li>
           <li><a href="/auth/register">Register</a></li>
           {{/if}}
         </ul>
+
       </nav>
-    </header>
 
-   
-        {{{body}}}
-    
+      {{{body}}}
 
-    <footer>
-      <p>Back-End 2023</p>
-    </footer>
+      <footer>@SoftUni - JS Back-End - Second Hand Electronics 2023</footer>
+    </div>
 
   </body>
 

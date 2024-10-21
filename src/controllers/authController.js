@@ -8,14 +8,14 @@ const router = Router();
 ************************/
 // GET
 router.get("/register", (req, res) => {
-  res.render("auth/register");
+  res.render("auth/register", { title: "Second Hand Electronics" });
 });
 
 // POST
 router.post("/register", async (req, res) => {
-  const { username, email, password, rePass } = req.body;
+  const { email, username, password, rePass } = req.body;
 
-  await authService.register(username, email, password, rePass);
+  await authService.register(email, username, password, rePass);
 
   res.redirect("/auth/login");
 });
@@ -27,7 +27,7 @@ router.post("/register", async (req, res) => {
 // GET
 
 router.get("/login", (req, res) => {
-  res.render("auth/login");
+  res.render("auth/login", { title: "Second Hand Electronics" });
 });
 
 // POST

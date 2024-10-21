@@ -1,25 +1,32 @@
-<!-- In case of error, you should display div with class "errorContainer" -->
-<!-- You can choose to display the first error or all of them (error message/s in your opinion) -->
-<!-- <div>
-            <div class="errorContainer">
-                <p>Error</p>
-            </div>
-        </div> -->
-<main id="register">
-  <div class="register-box">
-    <h1>Register</h1>
-    <h4>It's free and only takes a minute</h4>
-    <form method="post">
-      <label>Username</label>
-      <input type="text" name="username" placeholder="Username.." />
-      <label>Email</label>
-      <input type="text" name="email" placeholder="Email.." />
-      <label>Password</label>
-      <input type="password" name="password" placeholder="Password.." />
-      <label>Confirm Password</label>
-      <input type="password" name="rePass" placeholder="Confirm Password.." />
-      <input type="submit" value="Register" />
-    </form>
-    <p>Already have an account? <a href="/auth/login">Login here</a></p>
-  </div>
-</main>
+<section id="registerPage">
+  <form id="registerForm" method="post">
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" placeholder="Email" />
+
+    <label for="username">Username:</label>
+    <input
+      type="text"
+      id="username"
+      name="username"
+      placeholder="Enter your Username"
+    />
+
+    <label for="password">Password:</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      placeholder="Password"
+    />
+
+    <label for="rePassword">Repeat Password:</label>
+    <input
+      type="password"
+      id="rePassword"
+      name="rePass"
+      placeholder="Repeat Password"
+    />
+
+    <input type="submit" class="register" value="Register" />
+  </form>
+</section>

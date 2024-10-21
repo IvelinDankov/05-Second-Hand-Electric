@@ -1,5 +1,5 @@
 {
-  "name": "SoftUni Exam Okt 2024",
+  "name": "SoftUni-Exam-Okt-2024",
   "version": "1.0.0",
   "description": "Exam",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "dev": "nodemon ./src/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "VD",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.1.7"

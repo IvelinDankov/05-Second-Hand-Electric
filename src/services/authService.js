@@ -6,11 +6,11 @@ import "dotenv/config";
 /*##################
 ####### REGISTER ###
 ###################*/
-const register = (username, email, password, rePass) => {
+const register = (email, username, password, rePass) => {
   if (password !== rePass) {
     throw new Error("Password is not the same!");
   }
-  return User.create({ username, email, password });
+  return User.create({ email, username, password });
 };
 
 /*##################
