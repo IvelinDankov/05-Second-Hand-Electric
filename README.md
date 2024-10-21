@@ -11,5 +11,7 @@
 - [x] Next is to start with User data. 
 - [x] Register User 
 - [x] Login User & logout 
+- [x] Create Controller for Create and add Create View  
+- [x] At first in create change all names
 - [ ] 
 - [ ] 
